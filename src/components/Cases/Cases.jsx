@@ -23,13 +23,13 @@ function Cases() {
             <Header>Business Cases</Header>
             <DescText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</DescText>
         </Wrapper>
-        <div className="App">
+        {/* <div className="App"> */}
 {/* //       {loading && <Spinner />} */}
 {/* //       <Searchbar onSubmit={handleFormSubmit} /> */}
        <ImageGallery items={items} />
 {/* //       {items.length > 0 && <Button onBtnClick={onBtnClick} />} */}
 {/* //       <ToastContainer autoClose={3000} /> */}
-        </div>
+        {/* </div> */}
         </>
       
     );

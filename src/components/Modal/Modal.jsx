@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { Overlay, ModalStyle, PrevImg, NextImg } from './Modal.styled';
+import { Overlay, ModalStyle, PrevImg, NextImg, Close } from './Modal.styled';
 import items from "../../helpers/data/data";
 
 
@@ -55,6 +55,10 @@ function Modal({ toggleModal, id }) {
     getData();
   };
 
+  const handleCloseIcon = () => {
+    toggleModal();
+  };
+
   return createPortal(
     <Overlay onClick={handleBackdropClick}>
       <ModalStyle>
@@ -68,7 +72,8 @@ function Modal({ toggleModal, id }) {
           <source srcSet={img} media="(max-width: 767px)" style={{ width: '100%', height: '100%', objectFit: "cover"}}/>
           <img src={img} alt={tags} style={{ width: '100%', height: '100%', objectFit: "cover"}}/>
         </picture>
-        {num !== 8 && <NextImg onClick={handleNextClick} src={require("../../images/gallery/next.png")}/>}
+        {num !== 8 && <NextImg onClick={handleNextClick} src={require("../../images/gallery/next.png")} />}
+        <Close onClick={handleCloseIcon} src={require("../../images/gallery/close.png")} />
       </ModalStyle>
     </Overlay>,  
     modalRoot

@@ -1,9 +1,10 @@
-import styled from "styled-components";
-import iconClose from "../../images/gallery/close.png";
+import styled from 'styled-components';
+// import iconClose from '../../images/gallery/close.png';
 // import { ReactComponent as Prev } from "../../images/gallery/prev.png";
 // import { ReactComponent as Next } from "../../images/gallery/next.png";
 
 export const PrevImg = styled.img`
+  cursor: pointer;
   position: absolute;
   width: 25px;
   height: 25px;
@@ -12,11 +13,21 @@ export const PrevImg = styled.img`
 `;
 
 export const NextImg = styled.img`
+  cursor: pointer;
   position: absolute;
   width: 25px;
   height: 25px;
   right: calc(50% - 140px);
   bottom: calc(50% - 20px);
+`;
+
+export const Close = styled.img`
+  cursor: pointer;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: calc(60%);
+  bottom: calc(34%);
 `;
 
 export const Overlay = styled.div`
@@ -30,15 +41,6 @@ export const Overlay = styled.div`
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1200;
-  &:after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    right: calc(50% - 140px);
-    bottom: calc(50% - 115px);
-    background: url(${iconClose}) no-repeat center/cover;
-  }
 `;
 
 export const ModalStyle = styled.div`
