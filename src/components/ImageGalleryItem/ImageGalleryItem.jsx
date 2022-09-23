@@ -2,7 +2,7 @@ import { useState } from "react";
 import Modal from "../Modal/Modal";
 import { GalleryItem, GalleryItemImage } from './ImageGalleryItem.styled';
 
- function ImageGalleryItem({img, webp, img2x, webp2x, tags}) {
+ function ImageGalleryItem({id, img, webp, img2x, webp2x, tags}) {
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
@@ -22,12 +22,13 @@ import { GalleryItem, GalleryItemImage } from './ImageGalleryItem.styled';
     </GalleryItemImage>
       {showModal && (
         <Modal
-          img={img}
-          webp={webp}
-          img2x={img2x}
-          webp2x={webp2x}
+          id={id}
+          // img={img}
+          // webp={webp}
+          // img2x={img2x}
+          // webp2x={webp2x}
           toggleModal={toggleModal}
-          alt={tags}
+          // alt={tags}
         />
       )}
     </GalleryItem>

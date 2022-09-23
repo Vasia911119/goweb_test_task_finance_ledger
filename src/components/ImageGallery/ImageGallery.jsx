@@ -6,6 +6,7 @@ function ImageGallery({ items }) {
     <Gallery>
       {items.map(({ id, img, webp, img2x, webp2x, tags }) => (
         <ImageGalleryItem
+          id={id}
           key={id}
           img={img}
           webp={webp}
