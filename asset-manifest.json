@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/goweb_test_task_finance_ledger/static/css/main.31d6cfe0.css",
+    "main.js": "/goweb_test_task_finance_ledger/static/js/main.51751b90.js",
+    "static/media/showcase@2x.jpg": "/goweb_test_task_finance_ledger/static/media/showcase@2x.73c58f9aec29be2efd5a.jpg",
+    "static/media/showcase@2x.webp": "/goweb_test_task_finance_ledger/static/media/showcase@2x.6718cc6851409ea4b6ba.webp",
+    "static/media/showcase.jpg": "/goweb_test_task_finance_ledger/static/media/showcase.51cab55d982ce4bcedb5.jpg",
+    "static/media/showcase.webp": "/goweb_test_task_finance_ledger/static/media/showcase.ae588206237bf5dbfd39.webp",
+    "static/media/logo.svg": "/goweb_test_task_finance_ledger/static/media/logo.5443d3ccbcb082b7d30cd82ebdf5fe70.svg",
+    "index.html": "/goweb_test_task_finance_ledger/index.html",
+    "main.51751b90.js.map": "/goweb_test_task_finance_ledger/static/js/main.51751b90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.51751b90.js"
+  ]
+}
