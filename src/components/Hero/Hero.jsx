@@ -1,18 +1,26 @@
 import {
-  Header,
+  HeaderText,
   Text,
     Wrapper,
-  ButtonText
+    ButtonText,
+    ButtonStyled,
+  Container,
 } from './Hero.styled';
-import Button from '../Button/Button';
+import Header from '../Header/Header';
+// import Button from '../Button/Button';
 
 function Hero() {
-  return (
+    return (
+    <Container>
+      <Header/>
       <Wrapper>
-          <Header>The Sky Is The Limit</Header>
+          <HeaderText>The Sky Is The Limit</HeaderText>
           <Text>We provide world class financial assistance</Text>
-          <Button text={<ButtonText>Read More</ButtonText>} />
-        </Wrapper>
+        <ButtonStyled>
+            <ButtonText>Read More</ButtonText>
+        </ButtonStyled>
+      </Wrapper>
+    </Container>
   );
 }
 
