@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import fb from '../../images/fb.png';
+import tw from '../../images/tw.png';
 
 export const GalleryItem = styled.li`
   margin-bottom: 103px;
@@ -10,13 +12,24 @@ export const GalleryItem = styled.li`
 `;
 
 export const GalleryItemImage = styled.picture`
+  position: relative;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    /* filter: brightness(100%); */
+    /* filter: brightness(90%); */
     opacity: 0.6;
+    /* transform: scale(1.03); */
     /* transform: scale(1.2); */
     /* cursor: zoom-in; */
+    /* &:after {
+      content: '';
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: calc(50%);
+      bottom: calc(50%);
+      background: url(${fb}) no-repeat center/cover;
+    } */
   }
 `;
 
@@ -58,6 +71,27 @@ export const ImgWrp = styled.div`
     transform: scale(1.03);
     box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2),
       5px 5px 5px -5px rgba(0, 0, 0, 0.2), 5px 5px 5px -5px rgba(0, 0, 0, 0.2);
+    &:before {
+      content: '';
+      position: absolute;
+      /* z-index: 2; */
+      width: 30px;
+      height: 30px;
+      left: calc(50% - 80px);
+      bottom: calc(50% - 15px);
+      background: url(${fb}) no-repeat center/cover;
+      /* background: #28a745;
+    border-radius: 2px; */
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: calc(50% - 50px);
+      bottom: calc(50% - 15px);
+      background: url(${tw}) no-repeat center/cover;
+    }
     /* cursor: zoom-in; */
   }
 `;
