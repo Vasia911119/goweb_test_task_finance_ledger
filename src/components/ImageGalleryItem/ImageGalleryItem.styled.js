@@ -1,7 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const GalleryItem = styled.li`
-  /* margin: 0 auto; */
   width: 280px;
   height: 176px;
   border-radius: 2px;
@@ -10,13 +9,10 @@ export const GalleryItem = styled.li`
 `;
 
 export const GalleryItemImage = styled.picture`
-  /* width: 100%;
-  height: 260px;
-  object-fit: cover; */
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    transform: scale(1.03);
     cursor: zoom-in;
+    opacity: 0.8;
   }
 `;

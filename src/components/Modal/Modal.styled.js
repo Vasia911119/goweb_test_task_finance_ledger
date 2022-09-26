@@ -26,14 +26,14 @@ export const Close = styled.img`
   position: absolute;
   width: 20px;
   height: 20px;
-  left: calc(60%);
-  bottom: calc(34%);
+  right: calc(50% - 140px);
+  bottom: calc(50% - 120px);
 `;
 
 export const Overlay = styled.div`
   position: fixed;
   top: 0;
-  left: 0;
+  left: -9px;
   width: 100vw;
   height: 100vh;
   display: flex;

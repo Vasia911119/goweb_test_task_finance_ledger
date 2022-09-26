@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import ImageGallery from '../ImageGallery/ImageGallery';
 import Spinner from '../Loader/Loader';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
-import items from '../../helpers/data/data';
+import items from '../../helpers/data/galleryItems';
 
 
 import {

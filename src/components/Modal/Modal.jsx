@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { Overlay, ModalStyle, PrevImg, NextImg, Close } from './Modal.styled';
-import items from "../../helpers/data/data";
+import items from "../../helpers/data/galleryItems";
 
 
 
