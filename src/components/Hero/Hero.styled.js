@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import imgv from "../../images/Vector.png";
-import img from "../../images/home/showcase.jpg";
-import webp from "../../images/home/showcase.webp";
-import img2x from "../../images/home/showcase@2x.jpg";
-import webp2x from "../../images/home/showcase@2x.webp";
+import styled from 'styled-components';
+import imgv from '../../images/Vector.png';
+import img from '../../images/home/showcase.jpg';
+import webp from '../../images/home/showcase.webp';
+import img2x from '../../images/home/showcase@2x.jpg';
+import webp2x from '../../images/home/showcase@2x.webp';
 
 export const HeaderText = styled.h2`
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -38,7 +38,7 @@ export const ButtonText = styled.p`
   padding: 16px 32px 16px 49px;
   position: relative;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     width: 10px;
     height: 12px;
@@ -53,7 +53,7 @@ export const ButtonStyled = styled.button`
   border: 1px solid #28a745;
   border-radius: 5px;
   cursor: pointer;
-  height: "57px";
+  height: '57px';
   transition: all 0.2s ease-in-out;
   :active,
   &:hover {
@@ -69,6 +69,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
+  /* z-index: 2; */
   background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(${img}) no-repeat center/cover;
   @supports (

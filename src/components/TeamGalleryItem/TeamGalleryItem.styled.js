@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import fb from '../../images/fb.png';
-import tw from '../../images/tw.png';
+import { HandySvg } from 'handy-svg';
 
 export const GalleryItem = styled.li`
   margin-bottom: 103px;
@@ -16,20 +15,7 @@ export const GalleryItemImage = styled.picture`
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    /* filter: brightness(90%); */
-    opacity: 0.6;
-    /* transform: scale(1.03); */
-    /* transform: scale(1.2); */
-    /* cursor: zoom-in; */
-    /* &:after {
-      content: '';
-      position: absolute;
-      width: 35px;
-      height: 35px;
-      left: calc(50%);
-      bottom: calc(50%);
-      background: url(${fb}) no-repeat center/cover;
-    } */
+    opacity: 0.8;
   }
 `;
 
@@ -41,8 +27,6 @@ export const Header = styled.h2`
   line-height: 27px;
   text-align: center;
   color: #000000;
-  /* padding: 0 40px; */
-  /* margin: 0 0 24px; */
 `;
 
 export const SubHeader = styled.h3`
@@ -53,8 +37,41 @@ export const SubHeader = styled.h3`
   line-height: 22px;
   text-align: center;
   color: #000000;
-  /* padding: 0 40px; */
-  /* margin: 0 0 24px; */
+`;
+
+export const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  display: none;
+  transition: 0.5s ease;
+  background-color: rgb(0, 0, 0, 0.6);
+`;
+
+export const OverlayText = styled.ul`
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  grid-auto-rows: minmax(100px, auto);
+
+  position: absolute;
+  top: calc(50% + 35px);
+  left: calc(50% - 20px);
+  transform: translate(-50%, -50%);
+  text-align: center;
+`;
+
+export const SvgIcon = styled(HandySvg)`
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const ImgWrp = styled.div`
@@ -62,36 +79,13 @@ export const ImgWrp = styled.div`
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    /* z-index: 5; */
-    background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
-    );
-    transform: scale(1.03);
-    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2),
-      5px 5px 5px -5px rgba(0, 0, 0, 0.2), 5px 5px 5px -5px rgba(0, 0, 0, 0.2);
-    &:before {
-      content: '';
-      position: absolute;
-      /* z-index: 2; */
-      width: 30px;
-      height: 30px;
-      left: calc(50% - 80px);
-      bottom: calc(50% - 15px);
-      background: url(${fb}) no-repeat center/cover;
-      /* background: #28a745;
-    border-radius: 2px; */
-    }
-    &:after {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      left: calc(50% - 50px);
-      bottom: calc(50% - 15px);
-      background: url(${tw}) no-repeat center/cover;
-    }
-    /* cursor: zoom-in; */
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  &:hover ${Overlay} {
+    display: block;
+    opacity: 1;
   }
 `;

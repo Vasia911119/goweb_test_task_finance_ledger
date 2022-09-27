@@ -7,7 +7,6 @@ import {
   Container,
 } from './Hero.styled';
 import Header from '../Header/Header';
-// import Button from '../Button/Button';
 
 function Hero() {
     return (
