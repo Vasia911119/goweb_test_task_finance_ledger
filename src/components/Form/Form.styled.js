@@ -8,7 +8,7 @@ export const Container = styled.div`
   }
 
   @media (min-width: 1360px) {
-    /* padding: 80px 28px 80px 20px; */
+    padding: 56px 28px 77px 20px;
   }
 `;
 
@@ -73,10 +73,7 @@ export const Input = styled.input`
   }
 
   @media (min-width: 1360px) {
-    /* width: 620px;
-    line-height: 1.56;
-    padding-top: 10px;
-    padding-bottom: 1px; */
+    width: 642px;
   }
 
   /* &:hover + &:not(:placeholder-shown) {
@@ -107,16 +104,11 @@ export const Button = styled.button`
 
   &:hover {
     background: rgb(40, 167, 69, 0.8);
+  }
 
-    @media (min-width: 768px) {
-      width: 324px;
-      font-size: 18px;
-      line-height: 25px;
-    }
-
-    @media (min-width: 1360px) {
-      /* width: 642px;
-      margin-top: 28px; */
-    }
+  @media (min-width: 768px) {
+    width: 324px;
+    font-size: 18px;
+    line-height: 25px;
   }
 `;
