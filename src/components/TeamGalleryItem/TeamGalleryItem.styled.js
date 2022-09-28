@@ -2,12 +2,18 @@ import styled from 'styled-components';
 import { HandySvg } from 'handy-svg';
 
 export const GalleryItem = styled.li`
-  margin-bottom: 103px;
+  margin-bottom: 108px;
   width: 280px;
   height: 176px;
   border-radius: 2px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+  @media (min-width: 768px) {
+    margin-bottom: 128px;
+    width: 223px;
+    height: 148px;
+  }
 `;
 
 export const GalleryItemImage = styled.picture`
@@ -26,7 +32,13 @@ export const Header = styled.h2`
   font-size: 20px;
   line-height: 27px;
   text-align: center;
-  color: #000000;
+  color: #333333;
+  margin: 16px 0 8px;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 `;
 
 export const SubHeader = styled.h3`
@@ -36,7 +48,13 @@ export const SubHeader = styled.h3`
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  color: #000000;
+  color: #333333;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 `;
 
 export const Overlay = styled.div`

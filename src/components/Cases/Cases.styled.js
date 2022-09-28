@@ -1,49 +1,57 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Text = styled.p`
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  color: #000000;
+  color: #333333;
   margin: 0 0 16px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 `;
 
 export const Header = styled.h2`
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #000000;
-  /* padding: 0 40px; */
+  color: #333333;
   margin: 0 0 24px;
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 54px;
+  }
 `;
 
 export const DescText = styled.p`
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  color: #000000;
-  margin: 0 0 24px;
+  color: #333333;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 `;
 
 export const Wrapper = styled.div`
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: left; */
-  padding: 60px 56px 31px 56px;
-  /* background: #28a745; */
-  /* width: 100%; */
-  /* margin: 22px 0 16px 0; */
-  /* @media (min-width: 768px) {
-    justify-content: space-between;
-  } */
+  padding: 60px 56px 31px;
+
+  @media (min-width: 768px) {
+    padding: 48px 60px 30px;
+  }
 `;

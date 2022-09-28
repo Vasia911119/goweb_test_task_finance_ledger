@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Text = styled.p`
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -9,22 +9,31 @@ export const Text = styled.p`
   text-align: left;
   color: #ffffff;
   margin: 0 0 16px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 `;
 
 export const Header = styled.h2`
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
   text-align: left;
   color: #ffffff;
-  /* padding: 0 40px; */
   margin: 0 0 24px;
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 48px;
+  }
 `;
 
 export const DescText = styled.p`
-  font-family: "Open Sans";
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -32,6 +41,11 @@ export const DescText = styled.p`
   text-align: left;
   color: #ffffff;
   margin: 0 0 24px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 `;
 
 export const ButtonStyled = styled.button`
@@ -40,7 +54,8 @@ export const ButtonStyled = styled.button`
   border: 1px solid #ffffff;
   border-radius: 5px;
   cursor: pointer;
-  height: "54px";
+  width: 146px;
+  height: 54px;
   align-self: center;
   transition: all 0.2s ease-in-out;
   :active,
@@ -48,34 +63,51 @@ export const ButtonStyled = styled.button`
     color: #28a745;
     background: #ffffff;
   }
+
+  @media (min-width: 768px) {
+    width: 156px;
+    height: 57px;
+  }
 `;
 
 export const ButtonText = styled.p`
-  font-family: Open Sans;
-  font-size: 18px;
+  font-family: 'Open Sans';
+  font-size: 16px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 22px;
   letter-spacing: 0em;
   text-align: center;
   margin: 0;
-  padding: 16px 32px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 `;
 
 export const Wrapper = styled.div`
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: left; */
-  padding: 79px 20px;
+  padding: 79px 20px 75px;
   background: #28a745;
-  /* width: 100%; */
-  /* margin: 22px 0 16px 0; */
-  /* @media (min-width: 768px) {
-    justify-content: space-between;
-  } */
+
+  @media (min-width: 768px) {
+    padding: 62px 32px;
+    width: 336px;
+  }
 `;
 
 export const ImgWrp = styled.div`
   width: 320px;
   height: 220px;
+
+  @media (min-width: 768px) {
+    width: 368px;
+    height: 589px;
+  }
+`;
+
+export const Container = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 `;

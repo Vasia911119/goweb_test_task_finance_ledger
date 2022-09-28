@@ -82,7 +82,7 @@ const Form = () => {
                 {/* <Label htmlFor="email">Enter email*</Label> */}
               {errors.email && touched.email && errors.email}
             </Wrapper>
-            <p>
+            <p style={{margin: 0}}>
               <Button type="submit" disabled={isSubmitting}>Send</Button>
             </p>
               <ToastContainer/>     

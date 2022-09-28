@@ -10,6 +10,12 @@ export const PrevImg = styled.img`
   height: 25px;
   left: calc(50% - 140px);
   bottom: calc(50% - 20px);
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const NextImg = styled.img`
@@ -19,6 +25,12 @@ export const NextImg = styled.img`
   height: 25px;
   right: calc(50% - 140px);
   bottom: calc(50% - 20px);
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export const Close = styled.img`
@@ -28,12 +40,17 @@ export const Close = styled.img`
   height: 20px;
   right: calc(50% - 140px);
   bottom: calc(50% - 120px);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
 `;
 
 export const Overlay = styled.div`
   position: fixed;
   top: 0;
-  left: -9px;
+  left: 0;
   width: 100vw;
   height: 100vh;
   display: flex;

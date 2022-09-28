@@ -1,9 +1,6 @@
-import { useState, useEffect } from 'react';
-// import { ToastContainer } from 'react-toastify';
 import ImageGallery from '../ImageGallery/ImageGallery';
-import Spinner from '../Loader/Loader';
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import items from '../../helpers/data/galleryItems';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 
 import {
@@ -14,23 +11,23 @@ import {
 } from './Cases.styled';
 
 function Cases() {
-  const [loading, setLoading] = useState(false);
-
+  const {width} = useWindowDimensions();
+  const galleryItems = () => {
+  const odd = items.filter(elem => elem.id % 2 !== 0);
+  const pair = items.filter(elem => elem.id % 2 === 0).slice(0, 2);
+  const result = [...odd, ...pair];
+  return result
+  };
+  
     return (
-        <>
+      <>
         <Wrapper>
             <Text>This is what we do</Text>
             <Header>Business Cases</Header>
             <DescText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</DescText>
         </Wrapper>
-        {/* <div className="App"> */}
-{/* //       {loading && <Spinner />} */}
-{/* //       <Searchbar onSubmit={handleFormSubmit} /> */}
-       <ImageGallery items={items} />
-{/* //       {items.length > 0 && <Button onBtnClick={onBtnClick} />} */}
-{/* //       <ToastContainer autoClose={3000} /> */}
-        {/* </div> */}
-        </>
+        <ImageGallery items={ width>1360 ? items : galleryItems()} />
+      </>
       
     );
 }

@@ -7,8 +7,13 @@ export const Text = styled.p`
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  color: #000000;
+  color: #333333;
   margin: 0 0 16px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 33px;
+  }
 `;
 
 export const Header = styled.h2`
@@ -18,9 +23,13 @@ export const Header = styled.h2`
   font-size: 32px;
   line-height: 44px;
   text-align: center;
-  color: #000000;
-  /* padding: 0 40px; */
+  color: #333333;
   margin: 0 0 24px;
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+    line-height: 54px;
+  }
 `;
 
 export const DescText = styled.p`
@@ -30,20 +39,19 @@ export const DescText = styled.p`
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  color: #000000;
-  margin: 0 0 24px;
+  color: #333333;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 `;
 
 export const Wrapper = styled.div`
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: left; */
-  padding: 60px 30px 31px 30px;
-  /* background: #28a745; */
-  /* width: 100%; */
-  /* margin: 22px 0 16px 0; */
-  /* @media (min-width: 768px) {
-    justify-content: space-between;
-  } */
+  padding: 72px 20px 63px 20px;
+
+  @media (min-width: 768px) {
+    padding: 50px 32px 24px;
+  }
 `;

@@ -1,8 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CommonContainer = styled.div`
   width: 320px;
   min-height: 100vh;
+  /* padding: 0 20px; */
+  /* margin: 0; */
   /* background-color: #777777; */
   margin: 0 auto;
   /* padding: 0 20px; */

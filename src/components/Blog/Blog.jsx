@@ -5,13 +5,14 @@ import {
     Wrapper,
     ImgWrp,
     ButtonStyled,
-    ButtonText
+    ButtonText,
+    Container
 } from './Blog.styled';
 import Image from './Image/Image';
 
-function Solutions() {
+function Blog() {
   return (
-<>
+  <Container>
     <ImgWrp>
         <Image />
     </ImgWrp>
@@ -23,8 +24,8 @@ function Solutions() {
             <ButtonText>Read Our Blog</ButtonText>
         </ButtonStyled>
     </Wrapper>
-</> 
+  </Container> 
   );
 }
 
-export default Solutions;
+export default Blog;

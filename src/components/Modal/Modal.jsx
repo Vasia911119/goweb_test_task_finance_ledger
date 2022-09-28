@@ -3,8 +3,6 @@ import { createPortal } from "react-dom";
 import { Overlay, ModalStyle, PrevImg, NextImg, Close } from './Modal.styled';
 import items from "../../helpers/data/galleryItems";
 
-
-
 const modalRoot = document.getElementById('modal-root');
 
 function Modal({ toggleModal, id }) {
@@ -70,7 +68,7 @@ function Modal({ toggleModal, id }) {
           <source srcSet={img2x} media="(min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)" style={{ width: '100%', height: '100%', objectFit: "cover"}}/>
           <source srcSet={webp} media="(max-width: 767px)" type="image/webp" style={{ width: '100%', height: '100%', objectFit: "cover"}}/>
           <source srcSet={img} media="(max-width: 767px)" style={{ width: '100%', height: '100%', objectFit: "cover"}}/>
-          <img src={img} alt={tags} style={{ width: '100%', height: '100%', objectFit: "cover"}}/>
+          <img src={img} alt={tags} style={{ width: '100%', height: '100%', objectFit: "cover"}} />
         </picture>
         {num !== 8 && <NextImg onClick={handleNextClick} src={require("../../images/gallery/next.png")} />}
         <Close onClick={handleCloseIcon} src={require("../../images/gallery/close.png")} />

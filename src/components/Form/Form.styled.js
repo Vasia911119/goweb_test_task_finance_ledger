@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 40px 20px;
+  padding: 51px 20px 25px;
 
   @media (min-width: 768px) {
-    padding: 40px 32px;
+    padding: 32px;
   }
 
   @media (min-width: 1360px) {
-    padding: 80px 28px 80px 20px;
+    /* padding: 80px 28px 80px 20px; */
   }
 `;
 
@@ -19,12 +19,11 @@ export const Title = styled.h2`
   font-size: 32px;
   line-height: 48px;
   color: #333333;
-  margin-bottom: 32px;
-  /* width: 147px; */
+  margin: 0 0 69px;
 
-  /* @media (min-width: 768px) {
-    width: 305px;
-  } */
+  @media (min-width: 768px) {
+    margin-bottom: 24px;
+  }
 `;
 
 export const Error = styled.span`
@@ -53,7 +52,7 @@ export const Input = styled.input`
   height: 56px;
   background: #ffffff;
   border: 1px solid #f5f5f5;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 
   font-family: 'Open Sans';
   font-style: normal;
@@ -66,7 +65,7 @@ export const Input = styled.input`
   padding-bottom: 7px;
 
   @media (min-width: 768px) {
-    width: 324px;
+    width: 336px;
     font-size: 18px;
     line-height: 1.28;
     padding-top: 8px;
@@ -74,10 +73,10 @@ export const Input = styled.input`
   }
 
   @media (min-width: 1360px) {
-    width: 620px;
+    /* width: 620px;
     line-height: 1.56;
     padding-top: 10px;
-    padding-bottom: 1px;
+    padding-bottom: 1px; */
   }
 
   /* &:hover + &:not(:placeholder-shown) {
@@ -116,8 +115,8 @@ export const Button = styled.button`
     }
 
     @media (min-width: 1360px) {
-      width: 642px;
-      margin-top: 28px;
+      /* width: 642px;
+      margin-top: 28px; */
     }
   }
 `;

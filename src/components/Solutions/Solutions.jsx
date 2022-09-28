@@ -5,13 +5,14 @@ import {
     Wrapper,
     ImgWrp,
     ButtonStyled,
-    ButtonText
+    ButtonText,
+    Container
 } from './Solutions.styled';
 import Image from './Image/Image';
 
 function Solutions() {
   return (
-<>
+<Container>
     <ImgWrp>
         <Image />
     </ImgWrp>
@@ -23,7 +24,7 @@ function Solutions() {
             <ButtonText>Read More</ButtonText>
         </ButtonStyled>
     </Wrapper>
-</> 
+</Container> 
   );
 }
 

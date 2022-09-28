@@ -2,10 +2,7 @@ import styled from 'styled-components';
 import { HandySvg } from 'handy-svg';
 
 export const Container = styled.div`
-  width: 320px;
   background: #333333;
-  margin-left: auto;
-  margin-right: auto;
   padding: 20px 0;
 `;
 
@@ -14,12 +11,15 @@ export const List = styled.ul`
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0 auto 8px;
+  margin: 0 auto 12px;
   list-style: none;
+
+  @media (min-width: 768px) {
+    margin-bottom: 10px;
+  }
 `;
 
 export const Text = styled.p`
-  width: 256px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -27,8 +27,12 @@ export const Text = styled.p`
   line-height: 1.6;
   text-align: center;
   color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
 `;
 
 export const Icon = styled(HandySvg)`
@@ -38,25 +42,3 @@ export const Icon = styled(HandySvg)`
     fill: #28a745;
   }
 `;
-
-// @media screen and (min-width: 768px) {
-//     .container {
-//         width: 768px;
-//     }
-
-//     .list {
-//         margin-bottom: 6px;
-//     }
-
-//     .text {
-//         width: 287px;
-//         font-size: 18px;
-//         line-height: 1.56;
-//     }
-// }
-
-// @media screen and (min-width: 1360px) {
-//     .container {
-//         width: 1360px;
-//     }
-// }
