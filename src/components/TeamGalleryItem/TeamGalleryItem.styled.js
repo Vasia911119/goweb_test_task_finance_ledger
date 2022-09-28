@@ -14,6 +14,12 @@ export const GalleryItem = styled.li`
     width: 223px;
     height: 148px;
   }
+
+  @media (min-width: 1360px) {
+    margin-bottom: 168px;
+    width: 420px;
+    height: 281px;
+  }
 `;
 
 export const GalleryItemImage = styled.picture`

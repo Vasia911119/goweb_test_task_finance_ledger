@@ -46,6 +46,10 @@ export const DescText = styled.p`
     font-size: 18px;
     line-height: 25px;
   }
+
+  @media (min-width: 1360px) {
+    width: 640px;
+  }
 `;
 
 export const ButtonStyled = styled.button`
@@ -92,6 +96,11 @@ export const Wrapper = styled.div`
     padding: 59px 32px;
     width: 336px;
   }
+
+  @media (min-width: 1360px) {
+    padding: 80px 20px 80px 28px;
+    width: 690px;
+  }
 `;
 
 export const ImgWrp = styled.div`
@@ -101,6 +110,11 @@ export const ImgWrp = styled.div`
   @media (min-width: 768px) {
     width: 368px;
     height: 493px;
+  }
+
+  @media (min-width: 1360px) {
+    width: 670px;
+    height: 460px;
   }
 `;
 

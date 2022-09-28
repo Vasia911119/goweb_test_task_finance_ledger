@@ -26,7 +26,7 @@ function Cases() {
             <Header>Business Cases</Header>
             <DescText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</DescText>
         </Wrapper>
-        <ImageGallery items={ width>1360 ? items : galleryItems()} />
+        <ImageGallery items={ width >= 1360 ? items : galleryItems()} />
       </>
       
     );

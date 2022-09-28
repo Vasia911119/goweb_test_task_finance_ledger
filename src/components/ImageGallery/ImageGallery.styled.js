@@ -18,4 +18,10 @@ export const Gallery = styled.ul`
     grid-gap: 18px;
     padding: 0 32px;
   }
+
+  @media (min-width: 1360px) {
+    grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
+    grid-gap: 20px;
+    padding: 0 32px;
+  }
 `;

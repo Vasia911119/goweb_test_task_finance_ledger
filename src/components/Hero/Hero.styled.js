@@ -37,24 +37,28 @@ export const Text = styled.p`
     font-size: 40px;
     line-height: 48px;
   }
+
+  @media (min-width: 1360px) {
+    width: 800px;
+  }
 `;
 
 export const ButtonText = styled.p`
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   text-align: center;
   color: #ffffff;
   margin: 0;
-  padding: 16px 32px 16px 49px;
+  padding: 16px 24px 16px 45px;
   position: relative;
   &:before {
     content: '';
     position: absolute;
     width: 10px;
     height: 12px;
-    left: 33px;
+    left: 28px;
     bottom: 23px;
     background: url(${imgv}) no-repeat center/cover;
   }
@@ -65,7 +69,8 @@ export const ButtonStyled = styled.button`
   border: 1px solid #28a745;
   border-radius: 5px;
   cursor: pointer;
-  height: '57px';
+  width: 175px;
+  height: 57px;
   transition: all 0.2s ease-in-out;
   :active,
   &:hover {
@@ -81,6 +86,10 @@ export const Wrapper = styled.div`
 
   @media (min-width: 768px) {
     padding-bottom: 378px;
+  }
+
+  @media (min-width: 1360px) {
+    padding-bottom: 270px;
   }
 `;
 

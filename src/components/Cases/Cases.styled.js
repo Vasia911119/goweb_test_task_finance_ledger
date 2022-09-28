@@ -54,4 +54,8 @@ export const Wrapper = styled.div`
   @media (min-width: 768px) {
     padding: 48px 60px 30px;
   }
+
+  @media (min-width: 1360px) {
+    padding: 80px 28px 25px;
+  }
 `;

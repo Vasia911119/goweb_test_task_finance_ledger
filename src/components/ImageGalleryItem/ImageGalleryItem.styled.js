@@ -11,6 +11,11 @@ export const GalleryItem = styled.li`
     width: 223px;
     height: 148px;
   }
+
+  @media (min-width: 1360px) {
+    width: 309px;
+    height: 206px;
+  }
 `;
 
 export const GalleryItemImage = styled.picture`

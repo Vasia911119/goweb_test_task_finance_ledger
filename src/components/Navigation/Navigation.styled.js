@@ -11,6 +11,10 @@ export const List = styled.ul`
   @media (min-width: 768px) {
     width: 334px;
   }
+
+  @media (min-width: 1360px) {
+    width: 458px;
+  }
 `;
 
 export const Item = styled.li`

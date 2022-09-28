@@ -25,8 +25,13 @@ export const Container = styled.div`
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
-    padding: 16px 32px 0 32px;
+    padding: 16px 32px 0;
     justify-content: space-between;
     margin-bottom: 314px;
+  }
+
+  @media (min-width: 1360px) {
+    padding: 32px 28px 0;
+    margin-bottom: 183px;
   }
 `;
