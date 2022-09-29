@@ -36,11 +36,6 @@ function Header() {
             <Navigation />
           </Container> }
     </>
-    
-    // <Container ref={ref}>
-    //       <LogoStyled />
-    //       <Navigation />
-    // </Container>
   );
 }
 
