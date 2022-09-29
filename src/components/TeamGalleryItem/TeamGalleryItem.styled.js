@@ -86,7 +86,7 @@ export const OverlayText = styled.ul`
 
   position: absolute;
   top: calc(50% + 35px);
-  left: calc(50% - 20px);
+  left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 `;
