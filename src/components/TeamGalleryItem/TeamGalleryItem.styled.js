@@ -36,14 +36,14 @@ export const Header = styled.h2`
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 1.35;
   text-align: center;
   color: #333333;
   margin: 16px 0 8px;
 
   @media (min-width: 768px) {
     font-size: 32px;
-    line-height: 32px;
+    line-height: 1;
   }
 `;
 
@@ -52,14 +52,14 @@ export const SubHeader = styled.h3`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.38;
   text-align: center;
   color: #333333;
   margin: 0;
 
   @media (min-width: 768px) {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.39;
   }
 `;
 

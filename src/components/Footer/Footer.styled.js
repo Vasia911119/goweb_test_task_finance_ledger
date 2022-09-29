@@ -24,14 +24,14 @@ export const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.38;
   text-align: center;
   color: #ffffff;
   margin: 0 auto;
 
   @media (min-width: 768px) {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.39;
   }
 `;
 

@@ -43,13 +43,13 @@ export const Link = styled.a`
   font-style: normal;
   font-size: 16px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 1.38;
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
 
   @media (min-width: 768px) {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.39;
   }
 `;

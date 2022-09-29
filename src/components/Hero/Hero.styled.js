@@ -10,7 +10,7 @@ export const HeaderText = styled.h2`
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
-  line-height: 54px;
+  line-height: 1.35;
   text-align: center;
   color: #ffffff;
   padding: 0 40px;
@@ -18,7 +18,7 @@ export const HeaderText = styled.h2`
 
   @media (min-width: 768px) {
     font-size: 55px;
-    line-height: 75px;
+    line-height: 1.36;
   }
 `;
 
@@ -27,7 +27,7 @@ export const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
-  line-height: 32px;
+  line-height: 1.23;
   text-align: center;
   color: #ffffff;
   margin: 0 0 24px;
@@ -35,7 +35,7 @@ export const Text = styled.p`
   @media (min-width: 768px) {
     width: 523px;
     font-size: 40px;
-    line-height: 48px;
+    line-height: 1.2;
   }
 
   @media (min-width: 1360px) {
@@ -47,7 +47,7 @@ export const ButtonText = styled.p`
   font-family: 'Open Sans';
   font-size: 18px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.39;
   text-align: center;
   color: #ffffff;
   margin: 0;

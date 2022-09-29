@@ -5,7 +5,7 @@ export const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.38;
   text-align: center;
   color: #333333;
   margin: 0 0 16px;
@@ -21,14 +21,14 @@ export const Header = styled.h2`
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 1.38;
   text-align: center;
   color: #333333;
   margin: 0 0 24px;
 
   @media (min-width: 768px) {
     font-size: 40px;
-    line-height: 54px;
+    line-height: 1.35;
   }
 `;
 
@@ -37,14 +37,14 @@ export const DescText = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.38;
   text-align: center;
   color: #333333;
   margin: 0;
 
   @media (min-width: 768px) {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.39;
   }
 `;
 

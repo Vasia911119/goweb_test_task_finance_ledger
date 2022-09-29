@@ -5,14 +5,14 @@ export const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.38;
   text-align: left;
   color: #ffffff;
   margin: 0 0 16px;
 
   @media (min-width: 768px) {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.39;
   }
 `;
 
@@ -21,14 +21,14 @@ export const Header = styled.h2`
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 44px;
+  line-height: 1.38;
   text-align: left;
   color: #ffffff;
   margin: 0 0 24px;
 
   @media (min-width: 768px) {
     font-size: 40px;
-    line-height: 54px;
+    line-height: 1.35;
   }
 `;
 
@@ -37,14 +37,14 @@ export const DescText = styled.p`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.38;
   text-align: left;
   color: #ffffff;
   margin: 0 0 24px;
 
   @media (min-width: 768px) {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.39;
   }
 
   @media (min-width: 1360px) {
@@ -58,7 +58,7 @@ export const ButtonStyled = styled.button`
   border: 1px solid #ffffff;
   border-radius: 5px;
   cursor: pointer;
-  width: 146px;
+  width: 172px;
   height: 54px;
   align-self: center;
   transition: all 0.2s ease-in-out;
@@ -69,23 +69,23 @@ export const ButtonStyled = styled.button`
   }
 
   @media (min-width: 768px) {
-    width: 156px;
+    width: 186px;
     height: 57px;
   }
 `;
 
 export const ButtonText = styled.p`
   font-family: Open Sans;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 1.38;
   letter-spacing: 0em;
   text-align: center;
   margin: 0;
 
   @media (min-width: 768px) {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.39;
   }
 `;
 

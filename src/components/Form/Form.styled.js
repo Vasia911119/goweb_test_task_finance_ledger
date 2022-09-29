@@ -17,7 +17,7 @@ export const Title = styled.h2`
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 48px;
+  line-height: 1.5;
   color: #333333;
   margin: 0 0 69px;
 
@@ -84,7 +84,7 @@ export const Button = styled.button`
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.38;
   text-align: center;
   color: #ffffff;
   margin-top: 8px;
@@ -98,7 +98,7 @@ export const Button = styled.button`
     margin-top: 8px;
     width: 155px;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.39;
   }
 
   @media (min-width: 1360px) {
