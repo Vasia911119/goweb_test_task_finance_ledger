@@ -1,7 +1,15 @@
 {
   "files": {
-    "main.css": "/goweb_test_task_finance_ledger/static/css/main.c1976b74.css",
-    "main.js": "/goweb_test_task_finance_ledger/static/js/main.473d5248.js",
+    "main.css": "/goweb_test_task_finance_ledger/static/css/main.69e96394.css",
+    "main.js": "/goweb_test_task_finance_ledger/static/js/main.35a410d3.js",
+    "static/js/876.35fe2bb7.chunk.js": "/goweb_test_task_finance_ledger/static/js/876.35fe2bb7.chunk.js",
+    "static/js/227.824e85e2.chunk.js": "/goweb_test_task_finance_ledger/static/js/227.824e85e2.chunk.js",
+    "static/js/136.57b26b8c.chunk.js": "/goweb_test_task_finance_ledger/static/js/136.57b26b8c.chunk.js",
+    "static/js/566.7b6abdac.chunk.js": "/goweb_test_task_finance_ledger/static/js/566.7b6abdac.chunk.js",
+    "static/js/382.282a75c4.chunk.js": "/goweb_test_task_finance_ledger/static/js/382.282a75c4.chunk.js",
+    "static/js/489.1b48641e.chunk.js": "/goweb_test_task_finance_ledger/static/js/489.1b48641e.chunk.js",
+    "static/js/399.a7123d76.chunk.js": "/goweb_test_task_finance_ledger/static/js/399.a7123d76.chunk.js",
+    "static/css/544.fb68114e.chunk.css": "/goweb_test_task_finance_ledger/static/css/544.fb68114e.chunk.css",
     "static/media/showcase@2x.jpg": "/goweb_test_task_finance_ledger/static/media/showcase@2x.73c58f9aec29be2efd5a.jpg",
     "static/media/showcase@2x.webp": "/goweb_test_task_finance_ledger/static/media/showcase@2x.6718cc6851409ea4b6ba.webp",
     "static/media/showcase.jpg": "/goweb_test_task_finance_ledger/static/media/showcase.51cab55d982ce4bcedb5.jpg",
@@ -63,17 +71,25 @@
     "static/media/logo.svg": "/goweb_test_task_finance_ledger/static/media/logo.f903944409d74461d2e00834bb963cc5.svg",
     "static/media/cases2.webp": "/goweb_test_task_finance_ledger/static/media/cases2.979f90d7f0e5ed9ed242.webp",
     "static/media/cases5.webp": "/goweb_test_task_finance_ledger/static/media/cases5.e032dfbc6e1d381405ad.webp",
-    "index.html": "/goweb_test_task_finance_ledger/index.html",
     "static/media/worning.svg": "/goweb_test_task_finance_ledger/static/media/worning.24c1b60f0b94c201fd0734034753dae8.svg",
     "static/media/twitter.svg": "/goweb_test_task_finance_ledger/static/media/twitter.b7b203d6ce9915c52a0c43f17ce6d20e.svg",
+    "index.html": "/goweb_test_task_finance_ledger/index.html",
     "static/media/youtube.svg": "/goweb_test_task_finance_ledger/static/media/youtube.41b2fe7db1a77a9d2645ee5db68c68e5.svg",
     "static/media/linkedin.svg": "/goweb_test_task_finance_ledger/static/media/linkedin.1e588b1e0bf24a8b12c5ffdbde52ae6b.svg",
     "static/media/facebook.svg": "/goweb_test_task_finance_ledger/static/media/facebook.03fb767b3afb359385728e88e113a60e.svg",
-    "main.c1976b74.css.map": "/goweb_test_task_finance_ledger/static/css/main.c1976b74.css.map",
-    "main.473d5248.js.map": "/goweb_test_task_finance_ledger/static/js/main.473d5248.js.map"
+    "main.69e96394.css.map": "/goweb_test_task_finance_ledger/static/css/main.69e96394.css.map",
+    "main.35a410d3.js.map": "/goweb_test_task_finance_ledger/static/js/main.35a410d3.js.map",
+    "876.35fe2bb7.chunk.js.map": "/goweb_test_task_finance_ledger/static/js/876.35fe2bb7.chunk.js.map",
+    "227.824e85e2.chunk.js.map": "/goweb_test_task_finance_ledger/static/js/227.824e85e2.chunk.js.map",
+    "136.57b26b8c.chunk.js.map": "/goweb_test_task_finance_ledger/static/js/136.57b26b8c.chunk.js.map",
+    "566.7b6abdac.chunk.js.map": "/goweb_test_task_finance_ledger/static/js/566.7b6abdac.chunk.js.map",
+    "382.282a75c4.chunk.js.map": "/goweb_test_task_finance_ledger/static/js/382.282a75c4.chunk.js.map",
+    "489.1b48641e.chunk.js.map": "/goweb_test_task_finance_ledger/static/js/489.1b48641e.chunk.js.map",
+    "399.a7123d76.chunk.js.map": "/goweb_test_task_finance_ledger/static/js/399.a7123d76.chunk.js.map",
+    "544.fb68114e.chunk.css.map": "/goweb_test_task_finance_ledger/static/css/544.fb68114e.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.c1976b74.css",
-    "static/js/main.473d5248.js"
+    "static/css/main.69e96394.css",
+    "static/js/main.35a410d3.js"
   ]
 }
