@@ -37,19 +37,6 @@ export const Error = styled.span`
   justify-content: flex-start;
 `;
 
-// export const Label = styled.label`
-//   font-family: 'Open Sans';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: 23px;
-//   color: #808080;
-//   position: absolute;
-//   left: 20px;
-//   top: 20px;
-//   transition: transform 250ms linear;
-// `;
-
 export const Input = styled.input`
   box-sizing: border-box;
   width: 280px;
@@ -80,10 +67,6 @@ export const Input = styled.input`
     width: 642px;
     margin-bottom: 25px;
   }
-
-  /* &:hover + &:not(:placeholder-shown) {
-    transform: translateY(-45px);
-  } */
 `;
 
 export const Wrapper = styled.div`
