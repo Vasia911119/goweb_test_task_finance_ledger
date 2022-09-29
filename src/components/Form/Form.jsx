@@ -8,19 +8,7 @@ import iconError from '../../images/form/worning.svg';
 import {
   Container, Title, Error, Wrapper, Input, Button
 } from './Form.styled';
-// import {
-//   Container,
-//   ContentBox,
-//   Image,
-//   FormTitle,
-//   StyledForm as Form,
-//   StyledField as Field,
-//   ButtonBox,
-//   WarningName,
-//   WarningEmail,
-//   WarningText,
-// } from './Contact.styled';
-// import { ReactComponent as WarningIcon } from './images/svg/warning.svg';
+
 
 const schema = Yup.object().shape({
   name: Yup.string().min(2, 'Name is too short!').max(50, 'Name is too long!'),
@@ -62,10 +50,10 @@ const Form = () => {
             onSubmit={handleSubmit}
           >
             {({ errors, touched, isSubmitting, handleChange, handleBlur }) => (
-              <form name="form-contact" method="post">
+              <form method="post">
                 <NetlifyInput
                   type="hidden"
-                  name="contact"
+                  name="form-name"
                   value="contact"
                 />
                 <Wrapper>
