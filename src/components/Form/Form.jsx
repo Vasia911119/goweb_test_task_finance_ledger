@@ -1,8 +1,5 @@
 import * as Yup from 'yup';
 import { Formik, Field as NetlifyInput } from 'formik';
-import useToggle from '../../hooks/useToggle';
-import ModalForm from '../ModalForm/ModalForm';
-import SuccessForm from '../SuccessForm/SuccessForm';
 import {HandySvg} from 'handy-svg';
 import iconError from '../../images/form/worning.svg';
 import {
@@ -24,18 +21,6 @@ const encode = (data) => {
 };
 
 const Form = () => {
-  const [showModal, toggleModal] = useToggle(false);
-
-  const handleSubmit = async (values, actions) => {
-    fetch('/', {
-      method: 'POST',
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ 'form-name': 'contact', ...values }),
-    })
-      .then(() => toggleModal())
-      .then(() => actions.resetForm())
-      .catch((error) => alert(error));
-  };
 
   return (
     <>
@@ -47,7 +32,24 @@ const Form = () => {
               email: '',
             }}
             validationSchema={schema}
-            onSubmit={handleSubmit}
+            onSubmit={(values, { setSubmitting }) => {
+        fetch("/", {                                 
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: encode({
+            'form-name': 'contact',
+            ...values,
+          }),
+        })
+          .then(() => {
+            alert('Success!')
+            setSubmitting(false)
+          })
+          .catch(error => {
+            alert('Error: Please Try Again!')                            
+            setSubmitting(false)
+          })
+      }}
           >
             {({ errors, touched, isSubmitting, handleChange, handleBlur }) => (
               <form method="post">
@@ -103,12 +105,6 @@ const Form = () => {
             )}
           </Formik>
       </Container>
-
-      {showModal && (
-        <ModalForm onClose={() => toggleModal()}>
-          <SuccessForm onClose={() => toggleModal()} />
-        </ModalForm>
-      )}
     </>
   );
 }
