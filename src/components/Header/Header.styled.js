@@ -6,7 +6,7 @@ export const LogoStyled = styled(Logo)`
   height: 38px;
   margin-bottom: 16px;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
     transform: scale(1.03);

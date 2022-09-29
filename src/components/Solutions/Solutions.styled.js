@@ -61,7 +61,7 @@ export const ButtonStyled = styled.button`
   width: 146px;
   height: 54px;
   align-self: center;
-  transition: all 0.2s ease-in-out;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   :active,
   &:hover {
     color: #28a745;
