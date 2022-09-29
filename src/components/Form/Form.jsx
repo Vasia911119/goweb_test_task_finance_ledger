@@ -61,7 +61,7 @@ const Form = () => {
           handleSubmit,
           isSubmitting,
         }) => (
-          <form onSubmit={handleSubmit} name="contact" method="post">
+          <form onSubmit={handleSubmit} name="contact" netlify netlify-honeypot="bot-field" data-netlify="true" method="post">
             <input type="hidden" name="form-name" value="contact" />
             <Wrapper>
               <Input type="name"
