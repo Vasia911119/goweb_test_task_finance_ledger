@@ -95,7 +95,7 @@ export const Wrapper = styled.div`
 
   @media (min-width: 768px) {
     padding: 62px 32px;
-    width: 336px;
+    width: 400px;
   }
 
   @media (min-width: 1360px) {

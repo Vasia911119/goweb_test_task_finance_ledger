@@ -1,11 +1,8 @@
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 import { GalleryItem, GalleryItemImage } from './ImageGalleryItem.styled';
-import Spinner from '../Loader/Loader';
-import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
 function ImageGalleryItem({ id, img, webp, img2x, webp2x, tags }) {
-  const [loading, setLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
@@ -23,12 +20,10 @@ function ImageGalleryItem({ id, img, webp, img2x, webp2x, tags }) {
           <source srcSet={img} media="(max-width: 767px)" style={{ width: '100%', height: '100%', objectFit: "cover"}}/>
           <img src={img} alt={tags} style={{ width: '100%', height: '100%', objectFit: "cover"}}/>
       </GalleryItemImage>
-      {loading && <Spinner />}
       {showModal && (
         <Modal
           id={id}
           toggleModal={toggleModal}
-          onImageLoad={() => { setLoading(true) }}
         />
       )}
     </GalleryItem>

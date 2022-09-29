@@ -24,6 +24,10 @@ export const Title = styled.h2`
   @media (min-width: 768px) {
     margin-bottom: 24px;
   }
+
+  @media (min-width: 1360px) {
+    margin-bottom: 31px;
+  }
 `;
 
 export const Error = styled.span`
@@ -74,6 +78,7 @@ export const Input = styled.input`
 
   @media (min-width: 1360px) {
     width: 642px;
+    margin-bottom: 25px;
   }
 
   /* &:hover + &:not(:placeholder-shown) {
@@ -107,8 +112,13 @@ export const Button = styled.button`
   }
 
   @media (min-width: 768px) {
-    width: 324px;
+    margin-top: 8px;
+    width: 155px;
     font-size: 18px;
     line-height: 25px;
+  }
+
+  @media (min-width: 1360px) {
+    margin-top: 15px;
   }
 `;

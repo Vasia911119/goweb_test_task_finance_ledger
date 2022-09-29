@@ -21,7 +21,7 @@ function Cases() {
   
     return (
       <>
-        <Wrapper>
+        <Wrapper id="cases">
             <Text>This is what we do</Text>
             <Header>Business Cases</Header>
             <DescText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sapiente!</DescText>

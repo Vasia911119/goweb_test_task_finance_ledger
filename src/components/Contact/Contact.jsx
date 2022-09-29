@@ -8,7 +8,7 @@ import Form from "../Form/Form";
 
 const Contact = () => { 
     return (
-        <Container>
+        <Container id="contact">
             <ImgWrp>
                 <Image />
             </ImgWrp>

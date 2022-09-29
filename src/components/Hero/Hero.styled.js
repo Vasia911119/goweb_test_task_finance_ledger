@@ -82,13 +82,16 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 160px;
   padding-bottom: 104px;
 
   @media (min-width: 768px) {
+    padding-top: 378px;
     padding-bottom: 378px;
   }
 
   @media (min-width: 1360px) {
+    padding-top: 247px;
     padding-bottom: 270px;
   }
 `;

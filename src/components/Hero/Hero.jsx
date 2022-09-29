@@ -10,7 +10,7 @@ import Header from '../Header/Header';
 
 function Hero() {
     return (
-    <Container>
+    <Container id="home">
       <Header/>
       <Wrapper>
           <HeaderText>The Sky Is The Limit</HeaderText>

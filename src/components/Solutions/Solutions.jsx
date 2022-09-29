@@ -12,7 +12,7 @@ import Image from './Image/Image';
 
 function Solutions() {
   return (
-<Container>
+<Container id="about">
     <ImgWrp>
         <Image />
     </ImgWrp>

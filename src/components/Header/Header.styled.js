@@ -19,19 +19,30 @@ export const LogoStyled = styled(Logo)`
 `;
 
 export const Container = styled.div`
+  position: fixed;
+  top: 0;
   padding: 22px 22px 0 22px;
-  margin-bottom: 62px;
+  height: 108px;
+  width: 320px;
+  z-index: 999;
 
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
     padding: 16px 32px 0;
     justify-content: space-between;
-    margin-bottom: 314px;
+    height: 64px;
+    width: 768px;
   }
 
   @media (min-width: 1360px) {
     padding: 32px 28px 0;
-    margin-bottom: 183px;
+    height: 64px;
+    width: 1360px;
   }
+`;
+
+export const ContainerFixed = styled(Container)`
+  background-color: rgb(40, 39, 39);
+  opacity: 0.8;
 `;

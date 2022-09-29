@@ -12,7 +12,7 @@ import Image from './Image/Image';
 
 function Blog() {
   return (
-  <Container>
+  <Container id="blog">
     <ImgWrp>
         <Image />
     </ImgWrp>
