@@ -1,9 +1,6 @@
 import ImageGalleryItem from "../ImageGalleryItem/ImageGalleryItem";
 import { Gallery } from './ImageGallery.styled';
 
-
-
-
 function ImageGallery({ items }) {
 
   return (

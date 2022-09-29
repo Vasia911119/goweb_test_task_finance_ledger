@@ -1,6 +1,5 @@
 {
   "name": "goweb_test_task_finance_ledger",
-  "homepage": "https://vasia911119.github.io/goweb_test_task_finance_ledger/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,11 +18,12 @@
     "react-toastify": "^9.0.8",
     "styled-components": "^5.3.5",
     "v4": "^0.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "netlify deploy -p",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

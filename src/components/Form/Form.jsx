@@ -1,95 +1,128 @@
-import React from 'react';
-import { Formik } from 'formik';
+import * as Yup from 'yup';
+import { Formik, Field as NetlifyInput } from 'formik';
+import useToggle from '../../hooks/useToggle';
+import ModalForm from '../ModalForm/ModalForm';
+import SuccessForm from '../SuccessForm/SuccessForm';
 import {HandySvg} from 'handy-svg';
 import iconError from '../../images/form/worning.svg';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import {
   Container, Title, Error, Wrapper, Input, Button
 } from './Form.styled';
+// import {
+//   Container,
+//   ContentBox,
+//   Image,
+//   FormTitle,
+//   StyledForm as Form,
+//   StyledField as Field,
+//   ButtonBox,
+//   WarningName,
+//   WarningEmail,
+//   WarningText,
+// } from './Contact.styled';
+// import { ReactComponent as WarningIcon } from './images/svg/warning.svg';
 
+const schema = Yup.object().shape({
+  name: Yup.string().min(2, 'Name is too short!').max(50, 'Name is too long!'),
+  email: Yup.string()
+    .email('Invalid email!')
+    .required('This is a required field!'),
+});
+
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
 
 const Form = () => {
-  const notify = () => toast.success("Thank you! Your form submission has been received", {
-    position: toast.POSITION.TOP_CENTER
-  });
-  
+  const [showModal, toggleModal] = useToggle(false);
+
+  const handleSubmit = async (values, actions) => {
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ 'form-name': 'contact', ...values }),
+    })
+      .then(() => toggleModal())
+      .then(() => actions.resetForm())
+      .catch((error) => alert(error));
+  };
+
   return (
-    <Container>
-      <Title>Request Callback</Title>
-      <Formik
-        initialValues={{ name: '', email: '' }}
-        validate={values => {
-            const errors = {};
-            if (!values.email) {
-            errors.email =
-              <Error>
-                <HandySvg
-                  src={iconError}
-                  width="25"
-                  height="25"
+    <>
+      <Container>
+        <Title>Request Callback</Title>
+          <Formik
+            initialValues={{
+              name: '',
+              email: '',
+            }}
+            validationSchema={schema}
+            onSubmit={handleSubmit}
+          >
+            {({ errors, touched, isSubmitting, handleChange, handleBlur }) => (
+              <form name="form-contact" method="post">
+                <NetlifyInput
+                  type="hidden"
+                  name="contact"
+                  value="contact"
                 />
-                This is a required field
-              </Error>;
-          } else if (
-            !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-          ) {
-            errors.email = <Error>
-              <HandySvg
-                src={iconError}
-                width="25"
-                height="25"
-              />
-              Invalid email address
-            </Error>;
-          }
-          return errors;
-        }}
-        onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            notify();
-            setSubmitting(false);
-          }, 400);
-        }}
-      >
-        {({
-          values,
-          errors,
-          touched,
-          handleChange,
-          handleBlur,
-          handleSubmit,
-          isSubmitting,
-        }) => (
-          <form onSubmit={handleSubmit} name="contact" netlify netlify-honeypot="bot-field" data-netlify="true" method="post">
-            <input type="hidden" name="form-name" value="contact" />
-            <Wrapper>
-              <Input type="name"
-                name="name"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.name} 
-                placeholder="Enter your name"/>
-              {/* <Label htmlFor="name">Enter your name</Label> */}
-              {errors.name && touched.name && errors.name}
-            </Wrapper>
-            <Wrapper>
-              <Input type="email" name="email"
-                onChange={handleChange}
-                onBlur={handleBlur}
-                value={values.email} 
-                placeholder="Enter email*"/>
-                {/* <Label htmlFor="email">Enter email*</Label> */}
-              {errors.email && touched.email && errors.email}
-            </Wrapper>
-            <p style={{margin: 0}}>
-              <Button type="submit" disabled={isSubmitting}>Send</Button>
-            </p>
-              <ToastContainer/>     
-          </form>
-        )}
-      </Formik>
-    </Container>);
-};
+                <Wrapper>
+                <Input
+                  name="name"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  placeholder="Enter your name"
+                  title="Enter your name"
+                />
+                {errors.name && touched.name && (
+                  <Error>
+                    <HandySvg
+                      src={iconError}
+                      width="25"
+                     height="25"
+                     />
+                     This is a required field
+                    </Error>
+                  )}
+                </Wrapper>
+                <Wrapper>
+                <Input
+                  name="email"
+                  type="email"
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  placeholder="Enter email*"
+                  title="Enter email*"
+                />
+                {errors.email && touched.email && (
+                  <Error>
+                    <HandySvg
+                      src={iconError}
+                      width="25"
+                     height="25"
+                     />
+                     This is a required field
+                    </Error>
+                  )}
+              </Wrapper>
+              <div data-netlify-recaptcha="true"></div>
+                <p style={{margin: 0}}>
+                  <Button type="submit" disabled={isSubmitting}>Send</Button>
+                </p>
+              </form>
+            )}
+          </Formik>
+      </Container>
+
+      {showModal && (
+        <ModalForm onClose={() => toggleModal()}>
+          <SuccessForm onClose={() => toggleModal()} />
+        </ModalForm>
+      )}
+    </>
+  );
+}
 
 export default Form;
