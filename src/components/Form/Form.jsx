@@ -5,7 +5,7 @@ import iconError from '../../images/form/worning.svg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {
-  Container, Title, Error, Wrapper, Input, Label, Button
+  Container, Title, Error, Wrapper, Input, Button
 } from './Form.styled';
 
 
